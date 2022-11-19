@@ -1,0 +1,30 @@
+p {
+  font-family: Lato;
+}
+
+label{
+  font-family:  sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+button{
+  border-radius: 5px;
+  width: 100px;
+  height: 100%;
+  margin: 5px;
+  background-color:rgb(102, 102, 209);
+  color: aliceblue;
+  font-size: large;
+  cursor: pointer;
+}
+th,td{
+ margin: 5px;
+border:2px solid black
+}
+table{
+  border-collapse: collapse;
+}
+input{
+  border-radius: 5px;
+  height: 20px;
+}

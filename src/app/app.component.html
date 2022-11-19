@@ -1,0 +1,29 @@
+<body>
+<form *ngIf='!userData'  [formGroup]="myForm" style="margin:80px;background-color:#E8A394;padding:10px;border-radius:10px">
+<div>
+<label>UserName</label><br>
+ <input formControlName="email" id="email" name="email"  type="text"></div>
+ <div>
+ <label >Password</label><br>
+ <input formControlName="password" id="password" name="password" type="text"></div>
+ <div style="margin-top:20px;display:flex;justify-content:center">
+ <button (click)="login()">Submit</button>
+ </div>
+</form>
+<table *ngIf='userData' style="border:2px solid black">
+ <tr style="border:2px solid black">
+ <th> Id</th>
+ <th> Name</th>
+ <th> Year</th>
+ <th>Pantone_Value</th>
+ <th>Color</th>
+ </tr>
+ <tr *ngFor='let user of userData' style="border:2px solid black">
+   <td>{{user.id}}</td>
+   <td>{{user.name}}</td>
+   <td>{{user.year}}</td>
+   <td>{{user.pantone_value}}</td>
+   <td style="background-color:{{user.color}}"></td>
+ </tr>
+</table>
+</body>
